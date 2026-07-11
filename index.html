@@ -159,7 +159,7 @@
 
                             </a>
 
-                            <a href="assets/resume.pdf" download> class="btn btn-secondary">
+                            <a href="assets/resume.pdf" download class="btn btn-secondary">
 
                                 DOWNLOAD CV
 
@@ -436,6 +436,111 @@ VERSION
 
 </section>
 
+
+<section class="missions" id="missions">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>ACTIVE OPERATIONS</span>
+
+            <h2>MISSION DOSSIERS</h2>
+
+        </div>
+
+        <div class="missions-grid">
+
+
+            <div class="mission-card glass">
+
+                <span class="mission-id">MISSION 001</span>
+
+                <h3>Dungeon Quest API</h3>
+
+                <p>
+                    A gamified REST API built with Node.js, Express and MongoDB,
+                    featuring player progression, battles, inventory and persistence.
+                </p>
+
+                <div class="mission-meta">
+
+                    <span>STATUS <strong>DEPLOYED</strong></span>
+
+                    <span>CLEARANCE <strong>PUBLIC</strong></span>
+
+                </div>
+
+                <div class="mission-stack">
+
+                    <span>Node.js</span>
+
+                    <span>Express</span>
+
+                    <span>MongoDB</span>
+
+                    <span>REST API</span>
+
+                </div>
+
+                <div class="mission-actions">
+
+                    <a href="#" class="btn btn-primary">VIEW DOSSIER</a>
+
+                    <a href="#" class="btn btn-secondary">LIVE DEMO</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="mission-card glass">
+
+                <span class="mission-id">MISSION 002</span>
+
+                <h3>Atlas OS Portfolio</h3>
+
+                <p>
+                    A cinematic engineering operating system inspired portfolio
+                    featuring premium UI, immersive animations and interactive modules.
+                </p>
+
+                <div class="mission-meta">
+
+                    <span>STATUS <strong>IN DEVELOPMENT</strong></span>
+
+                    <span>CLEARANCE <strong>PUBLIC</strong></span>
+
+                </div>
+
+                <div class="mission-stack">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                    <span>UI/UX</span>
+
+                </div>
+
+                <div class="mission-actions">
+
+                    <a href="#" class="btn btn-primary">OPEN DOSSIER →</a>
+
+                    <a href="#" class="btn btn-secondary">SOURCE</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
         </main>
 
     </div>
@@ -444,7 +549,91 @@ VERSION
     <script src="js/cursor.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/animations.js"></script>
+    
+
+    <div class="dossier-overlay" id="dossier">
+
+    <div class="dossier-window glass">
+
+        <button class="close-dossier" id="closeDossier">
+
+            ✕
+
+        </button>
+
+        <span class="dossier-tag">
+
+            MISSION DOSSIER
+
+        </span>
+
+        <h2>
+
+            Dungeon Quest API
+
+        </h2>
+
+        <div class="dossier-section">
+
+            <h4>OBJECTIVE</h4>
+
+            <p>
+                Designed and developed a backend REST API for an RPG game
+                featuring authentication, player progression,
+                inventory management and persistent MongoDB storage.
+            </p>
+
+        </div>
+
+        <div class="dossier-section">
+
+            <h4>TECH STACK</h4>
+
+            <p>
+
+                Node.js
+
+                <br>
+
+                Express.js
+
+                <br>
+
+                MongoDB Atlas
+
+                <br>
+
+                Git
+
+            </p>
+
+        </div>
+
+        <div class="dossier-section">
+
+            <h4>FEATURES</h4>
+
+            <ul>
+
+                <li>Player Authentication</li>
+
+                <li>Battle Engine</li>
+
+                <li>Inventory System</li>
+
+                <li>REST API</li>
+
+                <li>Persistent Database</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 
 </html>
+<script src="js/dossier.js"></script>
