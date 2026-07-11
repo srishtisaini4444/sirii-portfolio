@@ -28,17 +28,23 @@ body::before{
 
     inset:0;
 
-    background:
-
-    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-
-    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
-
-    background-size:40px 40px;
-
     pointer-events:none;
 
-    z-index:-2;
+    z-index:-1;
+
+    background:
+
+    radial-gradient(
+
+        350px circle at var(--cursorX) var(--cursorY),
+
+        rgba(59,130,246,.08),
+
+        transparent 70%
+
+    );
+
+    transition: background .18s ease-out;
 
 }
 
@@ -258,27 +264,7 @@ p{
 
 }
 
-body::after{
 
-content:"";
-
-position:fixed;
-
-inset:0;
-
-background-image:
-
-linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
-
-linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
-
-background-size:60px 60px;
-
-pointer-events:none;
-
-z-index:-2;
-
-}
 
 ::selection{
 
@@ -287,3 +273,64 @@ background:#3B82F6;
 color:white;
 
 }
+
+
+.boot-log p{
+
+    margin:8px 0;
+
+    font-family:monospace;
+
+    color:#A7B3C5;
+
+    white-space:pre;
+
+}
+
+.boot-log .command{
+
+    color:#58A6FF;
+
+}
+
+.boot-log .access{
+
+    color:#58A6FF;
+
+    font-weight:600;
+
+}
+
+.boot-log .status{
+
+    color:#ffffff;
+
+}
+
+.boot-log .ready{
+
+    color:#E6EDF3;
+
+}
+
+.boot-success{
+
+    color:#22C55E;
+
+    margin-left:10px;
+
+}
+
+.terminal-cursor{
+
+    color:#58A6FF;
+
+    margin-left:2px;
+
+    animation:blink .9s infinite;
+
+    font-weight:700;
+
+}
+
+

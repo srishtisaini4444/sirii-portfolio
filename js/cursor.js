@@ -1,3 +1,5 @@
+console.log("Cursor JS Loaded");
+
 const root=document.documentElement;
 
 window.addEventListener("mousemove",(e)=>{

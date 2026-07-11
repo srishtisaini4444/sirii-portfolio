@@ -24,3 +24,4 @@ logEntries.forEach(log=>{
     logObserver.observe(log);
 
 });
+
