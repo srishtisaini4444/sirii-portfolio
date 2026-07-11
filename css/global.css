@@ -73,6 +73,7 @@ position:fixed;
 
 width:650px;
 
+
 height:650px;
 
 left:var(--cursorX);
@@ -254,5 +255,35 @@ p{
     background:var(--accent);
 
     color:white;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+
+linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+background-size:60px 60px;
+
+pointer-events:none;
+
+z-index:-2;
+
+}
+
+::selection{
+
+background:#3B82F6;
+
+color:white;
 
 }

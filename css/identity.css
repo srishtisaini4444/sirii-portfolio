@@ -48,6 +48,18 @@ min-height:220px;
 
 transition:var(--transition);
 
+box-shadow:
+
+0 0 0 rgba(59,130,246,0);
+
+transition:
+
+transform .35s,
+
+box-shadow .35s,
+
+border-color .35s;
+
 }
 
 .identity-card:hover{
@@ -55,6 +67,10 @@ transition:var(--transition);
 transform:translateY(-8px);
 
 border-color:rgba(59,130,246,.3);
+
+box-shadow:
+
+0 20px 50px rgba(59,130,246,.12);
 
 }
 

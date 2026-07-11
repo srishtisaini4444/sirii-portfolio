@@ -57,3 +57,11 @@ color:white;
 transform:translateY(-3px);
 
 }
+
+.dock a.active{
+
+background:rgba(59,130,246,.12);
+
+color:white;
+
+}
