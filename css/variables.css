@@ -1,100 +1,76 @@
-:root {
+:root{
 
-    /* ===============================
-       COLORS
-    =============================== */
 
-    --bg-primary: #09090B;
-    --bg-secondary: #111113;
-    --bg-tertiary: #18181B;
+    --bg:#05070A;
+    --surface:#0D1117;
+    --surface-light:#151B23;
 
-    --card-bg: rgba(255,255,255,0.04);
+    --glass:rgba(255,255,255,.04);
 
-    --text-primary: #FAFAFA;
-    --text-secondary: #A1A1AA;
+    --glass-border:rgba(255,255,255,.08);
 
-    --accent-blue: #38BDF8;
-    --accent-green: #22C55E;
-    --accent-orange: #F59E0B;
-    --accent-red: #EF4444;
+    --text:#F5F7FA;
 
-    --border-color: rgba(255,255,255,.08);
+    --text-secondary:#8C96A5;
 
-    /* ===============================
-       TYPOGRAPHY
-    =============================== */
+    --accent:#3B82F6;
 
-    --font-heading: "Space Grotesk", sans-serif;
-    --font-body: "Inter", sans-serif;
-    --font-mono: "JetBrains Mono", monospace;
+    --accent-soft:#7DD3FC;
 
-    /* ===============================
-       FONT SIZE
-    =============================== */
+    --success:#22C55E;
 
-    --fs-display: 72px;
-    --fs-h1: 56px;
-    --fs-h2: 40px;
-    --fs-h3: 32px;
+    --danger:#EF4444;
 
-    --fs-lg: 20px;
-    --fs-md: 16px;
-    --fs-sm: 14px;
-    --fs-xs: 12px;
 
-    /* ===============================
-       SPACING
-    =============================== */
+    --display:"Space Grotesk",sans-serif;
 
-    --space-1:4px;
-    --space-2:8px;
-    --space-3:12px;
-    --space-4:16px;
-    --space-5:24px;
-    --space-6:32px;
-    --space-7:48px;
-    --space-8:64px;
-    --space-9:96px;
-    --space-10:128px;
+    --body:"Inter",sans-serif;
 
-    /* ===============================
-       RADIUS
-    =============================== */
+    --mono:"JetBrains Mono",monospace;
 
-    --radius-sm:4px;
-    --radius-md:8px;
-    --radius-lg:12px;
-    --radius-xl:16px;
 
-    /* ===============================
-       SHADOWS
-    =============================== */
+    --fs-display:clamp(4rem,10vw,8rem);
 
-    --shadow-sm:
-        0 1px 2px rgba(0,0,0,.06);
+    --fs-h1:3rem;
 
-    --shadow-md:
-        0 4px 8px rgba(0,0,0,.08),
-        0 1px 2px rgba(0,0,0,.12);
+    --fs-h2:2rem;
 
-    --shadow-lg:
-        0 2px 4px rgba(0,0,0,.10),
-        0 16px 32px rgba(0,0,0,.18);
+    --fs-h3:1.35rem;
 
-    /* ===============================
-       ANIMATION
-    =============================== */
+    --fs-body:1rem;
 
-    --fast:120ms;
-    --normal:250ms;
-    --slow:450ms;
-    --page:600ms;
+    --fs-small:.9rem;
 
-    /* ===============================
-   EASING
-================================ */
 
---ease-out:cubic-bezier(0.16,1,0.3,1);
---ease-in:cubic-bezier(0.7,0,0.84,0);
+    --space-xs:.5rem;
+
+    --space-sm:1rem;
+
+    --space-md:1.5rem;
+
+    --space-lg:3rem;
+
+    --space-xl:6rem;
+
+    --space-2xl:8rem;
+
+
+    --radius:22px;
+
+    --radius-sm:14px;
+
+
+    --shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+    --glow:
+    0 0 40px rgba(59,130,246,.18);
+
+
+    --transition:.35s cubic-bezier(.22,.61,.36,1);
+
+
+
+    --container:1250px;
 
 }
