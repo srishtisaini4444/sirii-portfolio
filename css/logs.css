@@ -1,0 +1,99 @@
+.logs{
+
+    padding:140px 0;
+
+}
+
+.log-container{
+
+    padding:45px;
+
+}
+
+.log-entry{
+
+    display:grid;
+
+    grid-template-columns:180px 130px 1fr;
+
+    gap:30px;
+
+    align-items:center;
+
+    padding:28px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.log-entry:last-child{
+
+    border:none;
+
+}
+
+.log-entry:hover{
+
+    padding-left:18px;
+
+    background:rgba(255,255,255,.02);
+
+}
+
+.log-date{
+
+    font-family:var(--mono);
+
+    color:var(--text-secondary);
+
+}
+
+.log-status{
+
+    font-family:var(--mono);
+
+    font-size:.8rem;
+
+    letter-spacing:.08em;
+
+}
+
+.success{
+
+    color:#22C55E;
+
+}
+
+.info{
+
+    color:#3B82F6;
+
+}
+
+.warning{
+
+    color:#F59E0B;
+
+}
+
+.log-entry p{
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+@media(max-width:900px){
+
+.log-entry{
+
+grid-template-columns:1fr;
+
+gap:10px;
+
+}
+
+}
