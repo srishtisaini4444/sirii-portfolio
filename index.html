@@ -22,365 +22,174 @@
 
 <body>
 
-    <header class="header">
+    <!-- ================= Boot Screen ================= -->
 
-        <div class="container">
+    <section class="boot-screen" id="bootScreen">
 
-            <nav class="navbar">
+        <div class="boot-container">
 
-                <div class="logo">
+            <div class="boot-logo">
 
-                    <h2>ATLAS</h2>
-                    <span>Engineering Console v1.0</span>
+                <h1>ATLAS</h1>
 
+                <span>Engineering Operating System</span>
+
+            </div>
+
+            <div class="boot-status">
+
+                <p>SYSTEM STATUS</p>
+
+                <div class="online">
+                    <span class="dot"></span>
+                    ONLINE
                 </div>
 
-                <ul class="nav-links">
+            </div>
 
-                    <li><a href="#profile">PROFILE</a></li>
-                    <li><a href="#capabilities">CAPABILITIES</a></li>
-                    <li><a href="#systems">SYSTEMS</a></li>
-                    <li><a href="#log">LOG</a></li>
-                    <li><a href="#link">LINK</a></li>
+            <div class="boot-log">
 
-                </ul>
+                <p>Loading Identity............. ✓</p>
 
-                <div class="nav-right">
+                <p>Loading Capabilities......... ✓</p>
 
-                    <div class="status">
+                <p>Loading Missions............ ✓</p>
 
-                        <span class="status-dot"></span>
-                        <span>ONLINE</span>
+                <p>Loading System Log.......... ✓</p>
+
+                <p>Loading Terminal............ ✓</p>
+
+                <br>
+
+                <p class="success">
+                    Authentication Complete.
+                </p>
+
+            </div>
+
+            <button id="enterBtn" class="boot-btn">
+
+                PRESS ENTER
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Main Website ================= -->
+
+    <div id="website" class="website">
+
+        <header class="header">
+
+            <!-- We'll redesign the navbar next -->
+
+        </header>
+
+        <main>
+
+            <section class="hero">
+
+                <div class="container hero-grid">
+
+                    <div class="hero-left">
+
+                        <span class="hero-tag">
+
+                            ENGINEERING CONSOLE
+
+                        </span>
+
+                        <h1>
+
+                            BUILDING
+
+                            <br>
+
+                            DIGITAL
+
+                            <br>
+
+                            SYSTEMS.
+
+                        </h1>
+
+                        <p>
+
+                            Backend Engineer
+
+                            <br>
+
+                            Computer Science Student
+
+                            <br>
+
+                            API Developer
+
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#" class="btn btn-primary">
+
+                                VIEW MISSIONS
+
+                            </a>
+
+                            <a href="#" class="btn btn-secondary">
+
+                                DOWNLOAD CV
+
+                            </a>
+
+                        </div>
 
                     </div>
 
-                    <a href="#" class="resume-btn">
+                    <div class="hero-right">
 
-                        DOWNLOAD CV
+                        <div class="glass terminal">
 
-                    </a>
+<pre>
+$ atlas status
 
-                </div>
+STATUS:
+ONLINE
 
-            </nav>
+STACK
 
-        </div>
-
-    </header>
-
-    <main>
-
-    <section class="hero" id="profile">
-
-    <div class="hero__inner">
-
-        <div class="hero__content">
-
-            <div class="hero__eyebrow">
-                <span class="hero__status-dot"></span>
-                AVAILABLE FOR OPPORTUNITIES
-            </div>
-
-            <h1 class="hero__headline">
-                Building software that is
-                <span class="hero__headline-accent">reliable</span>,
-                scalable, and purposeful.
-            </h1>
-
-            <p class="hero__subhead">
-                I'm <strong>Srish</strong>, a Computer Science Engineering student passionate about backend development,
-                REST APIs, databases and scalable systems built with clean architecture.
-            </p>
-
-            <div class="hero__cta-row">
-
-                <a href="#systems" class="btn btn--primary">
-                    View Projects
-                </a>
-
-                <a href="#" class="btn btn--ghost">
-                    Download Resume
-                </a>
-
-            </div>
-
-            <div class="hero__meta">
-
-                <span class="hero__meta-item">04 Projects</span>
-
-                <span class="hero__meta-item">100+ Commits</span>
-
-                <span class="hero__meta-item">∞ Learning</span>
-
-            </div>
-
-        </div>
-
-        <div class="hero__visual">
-
-            <div class="hero__glow"></div>
-
-            <div class="hero__dashboard">
-
-                <div class="hero__dashboard-header">
-
-                    <span class="dot dot--red"></span>
-
-                    <span class="dot dot--yellow"></span>
-
-                    <span class="dot dot--green"></span>
-
-                </div>
-
-                <div class="hero__dashboard-body">
-
-<pre>$ npm run dev
-
-✓ Server Started
-
-Database: MongoDB Atlas
-
-API Status: 200 OK
-
-Latest Project: Dungeon Quest API
-
-Stack:
 Node.js
 Express
 MongoDB
-JWT
-Git</pre>
+Git
+Linux
+
+LATEST BUILD
+
+Dungeon Quest API
+
+VERSION
+
+2.0.1
+</pre>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </section>
 
-            <div class="hero__floating-card">
-
-                <div class="hero__floating-avatar"></div>
-
-                <div class="hero__floating-text">
-
-                    <span class="hero__floating-title">
-                        CURRENTLY BUILDING
-                    </span>
-
-                    <span class="hero__floating-value">
-                        Project Atlas
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
+        </main>
 
     </div>
 
-</section>
-
-<section class="about" id="capabilities">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-tag">PROFILE</span>
-
-            <h2>Engineering with intention.</h2>
-
-            <p>
-                I enjoy building backend systems that are reliable, scalable,
-                and simple to maintain. Every project is an opportunity to
-                learn better architecture and write cleaner code.
-            </p>
-
-        </div>
-
-        <div class="about-grid">
-
-            <div class="about-card large-card">
-
-                <h3>Engineering Philosophy</h3>
-
-                <p>
-                    I believe software should be understandable before it is
-                    clever. My focus is on building maintainable backend
-                    applications using clean architecture, REST APIs,
-                    databases, and practical engineering principles.
-                </p>
-
-            </div>
-
-            <div class="about-card">
-
-                <h3>Education</h3>
-
-                <ul>
-
-                    <li>B.Tech Computer Science Engineering</li>
-
-                    <li>GL Bajaj Group of Institutions</li>
-
-                    <li>Expected Graduation: 2029</li>
-
-                </ul>
-
-            </div>
-
-            <div class="about-card">
-
-                <h3>Current Focus</h3>
-
-                <ul>
-
-                    <li>⚡ Backend Development</li>
-
-                    <li>⚡ Node.js & Express</li>
-
-                    <li>⚡ MongoDB</li>
-
-                    <li>⚡ REST APIs</li>
-
-                </ul>
-
-            </div>
-
-            <div class="about-card">
-
-                <h3>Core Values</h3>
-
-                <ul>
-
-                    <li>✓ Clean Code</li>
-
-                    <li>✓ Performance</li>
-
-                    <li>✓ Scalability</li>
-
-                    <li>✓ Continuous Learning</li>
-
-                </ul>
-
-            </div>
-
-            <div class="timeline-card">
-
-                <h3>Journey</h3>
-
-                <div class="timeline-item">
-
-                    <span>2025</span>
-
-                    <p>Started learning backend development.</p>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <span>2026</span>
-
-                    <p>Building production-ready projects.</p>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <span>Next</span>
-
-                    <p>Internships, open source, and system design.</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="skills" id="systems">
-
-    <div class="container">
-
-        <p class="section-tag">
-            SYSTEMS
-        </p>
-
-        <h2 class="section-title">
-            Core Technologies
-        </h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <h3>Backend</h3>
-
-                <p>
-                    Node.js, Express.js, REST APIs
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h3>Programming</h3>
-
-                <p>
-                    Java, JavaScript, C
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h3>Database</h3>
-
-                <p>
-                    MongoDB, SQL
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h3>Frontend</h3>
-
-                <p>
-                    HTML, CSS, JavaScript
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h3>Tools</h3>
-
-                <p>
-                    Git, GitHub, VS Code
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h3>Currently Learning</h3>
-
-                <p>
-                    DSA, System Design, Backend Architecture
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/animations.js"></script>
 
 </body>
 
